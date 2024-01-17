@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Party Organizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the House Party Organizer</h1>
+    <a href="{{ url_for('register') }}">Register for the Party</a>
+    <br><br>
+    <a href="{{ url_for('guests') }}">View Registered Guests</a>
+</body>
+</html>

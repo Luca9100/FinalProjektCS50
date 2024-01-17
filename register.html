@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register for the Party</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Party Registration</h1>
+    <form method="POST" action="{{ url_for('register') }}" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="surname" placeholder="Surname" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="relationship_status" placeholder="Relationship Status">
+        <input type="file" name="picture" accept="image/*">
+        <input type="text" name="favorite_song" placeholder="Favorite Song">
+        <button type="submit">Register</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
